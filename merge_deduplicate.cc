@@ -92,7 +92,7 @@ int main(int argc, char *argv[]) {
   start = std::chrono::system_clock::now();
   FILE *out = fopen(output_file.c_str(), "w");
   for (size_t i = 0; i < num_edges; i++) {
-    fprintf(out, "%d %d %ld 0\n",
+    fprintf(out, "%u %u %ld 0\n",
             edges[i].row, // src_id
             edges[i].col, // dst_id
             i // type_edge_id
